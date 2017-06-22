@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{b0939155-119a-4c76-ab06-18d2dbbac3d7}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{19be3654-43d6-4c61-8bae-9e92cfbce9db}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{1013078b-dee7-49f8-b74b-c44c22281221}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{24dcc5dd-6e4c-40af-80a8-84e146927aff}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="atomic.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="databuffer.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="gcc_Debug.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="gcc_Release.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="hashid.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="luashrtbl.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="malloc_hook.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="rwlock.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_daemon.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_env.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_handle.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_harbor.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_imp.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_log.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_malloc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_module.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_monitor.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_mq.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_server.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_socket.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="skynet_timer.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="socket_epoll.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="socket_kqueue.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="socket_poll.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="socket_server.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="spinlock.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="malloc_hook.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_daemon.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_env.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_error.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_handle.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_harbor.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_log.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_main.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_module.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_monitor.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_mq.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_server.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_socket.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_start.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="skynet_timer.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="socket_server.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

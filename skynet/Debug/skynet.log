@@ -1,0 +1,31 @@
+﻿Build started 2017/6/22 15:37:25.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\skynet\skynet.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\skynet\skynet.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
+         VisualGDB: Sending 24 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Debug" in directory "/home/tianle/src/wskynet/skynet/" on tianle@192.168.0.173 (SSH)
+         mkdir Debug
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lsha1.c -o Debug/lsha1.o -MD -MF Debug/lsha1.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-bson.c -o Debug/lua-bson.o -MD -MF Debug/lua-bson.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-clientsocket.c -o Debug/lua-clientsocket.o -MD -MF Debug/lua-clientsocket.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-cluster.c -o Debug/lua-cluster.o -MD -MF Debug/lua-cluster.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-crypt.c -o Debug/lua-crypt.o -MD -MF Debug/lua-crypt.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-datasheet.c -o Debug/lua-datasheet.o -MD -MF Debug/lua-datasheet.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-debugchannel.c -o Debug/lua-debugchannel.o -MD -MF Debug/lua-debugchannel.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-memory.c -o Debug/lua-memory.o -MD -MF Debug/lua-memory.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-mongo.c -o Debug/lua-mongo.o -MD -MF Debug/lua-mongo.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-multicast.c -o Debug/lua-multicast.o -MD -MF Debug/lua-multicast.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-mysqlaux.c -o Debug/lua-mysqlaux.o -MD -MF Debug/lua-mysqlaux.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-netpack.c -o Debug/lua-netpack.o -MD -MF Debug/lua-netpack.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-profile.c -o Debug/lua-profile.o -MD -MF Debug/lua-profile.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-seri.c -o Debug/lua-seri.o -MD -MF Debug/lua-seri.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-sharedata.c -o Debug/lua-sharedata.o -MD -MF Debug/lua-sharedata.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-skynet.c -o Debug/lua-skynet.o -MD -MF Debug/lua-skynet.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-socket.c -o Debug/lua-socket.o -MD -MF Debug/lua-socket.dep
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-stm.c -o Debug/lua-stm.o -MD -MF Debug/lua-stm.dep
+         g++ -shared -o Debug/../../bin/skynet.so -Wl,-gc-sections    -Wl,--start-group Debug/lsha1.o Debug/lua-bson.o Debug/lua-clientsocket.o Debug/lua-cluster.o Debug/lua-crypt.o Debug/lua-datasheet.o Debug/lua-debugchannel.o Debug/lua-memory.o Debug/lua-mongo.o Debug/lua-multicast.o Debug/lua-mysqlaux.o Debug/lua-netpack.o Debug/lua-profile.o Debug/lua-seri.o Debug/lua-sharedata.o Debug/lua-skynet.o Debug/lua-socket.o Debug/lua-stm.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/skynet.so  -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\skynet\skynet.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.56

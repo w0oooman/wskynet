@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{43e8bedd-9a09-4817-9151-3f823ec2989a}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{c3ee28b7-470f-4ff8-9900-463ae198c3c2}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{cd1ce438-faf4-4360-93c3-5779432b6fd5}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{93742d0a-6ab8-4931-93d6-74dca17a32bd}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lsha1.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-bson.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-clientsocket.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-cluster.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-crypt.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-datasheet.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-debugchannel.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-memory.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-mongo.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-multicast.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-mysqlaux.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-netpack.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-profile.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-seri.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-sharedata.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-skynet.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-socket.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="lua-stm.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lua-seri.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

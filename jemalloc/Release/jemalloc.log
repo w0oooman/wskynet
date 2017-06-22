@@ -1,0 +1,27 @@
+﻿Build started 2017/6/21 17:57:35.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\jemalloc\jemalloc.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\jemalloc\jemalloc.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Found 114 source files to transfer. Checking the source cache to find modified files...
+         VisualGDB: Sending 114 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/jemalloc" on tianle@192.168.0.173 (SSH)
+         mkdir Release
+         gcc -ggdb -ffunction-sections -O3   -DNDEBUG -DRELEASE  -c src/arena.c -o Release/arena.o -MD -MF Release/arena.dep
+     1>F:\MyTest\myTest\testCPP\centos\wskynet\jemalloc\src\arena.c(2,49): fatal error : jemalloc/internal/jemalloc_preamble.h: No such file or directory
+          #include "jemalloc/internal/jemalloc_preamble.h"
+                                                          ^
+         compilation terminated.
+         make: *** [Release/arena.o] Error 1
+         -------------------------------------------------------------
+         Command exited with code 2
+         Executable: make
+         Arguments: CONFIG=Release
+         Directory: /home/tianle/src/wskynet/jemalloc
+     1>VisualGDB : error : Command-line action failed
+     1>EXEC : error : Build has failed. See the Output window for more details.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MakeFile.Targets(38,5): error MSB3073: The command ""C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\jemalloc\jemalloc.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"" exited with code 1.
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\jemalloc\jemalloc.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.74

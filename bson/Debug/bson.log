@@ -1,0 +1,14 @@
+﻿Build started 2017/6/22 15:34:19.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\bson\bson.vcxproj" on node 4 (Build target(s)).
+     1>Build:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\bson\bson.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
+         VisualGDB: Sending 6 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Debug" in directory "/home/tianle/src/wskynet/bson" on tianle@192.168.0.173 (SSH)
+         mkdir Debug
+         gcc -ggdb -ffunction-sections -O0  -I../lua -I../wskynet -DDEBUG  -fPIC -c lua-bson.c -o Debug/lua-bson.o -MD -MF Debug/lua-bson.dep
+         g++ -shared -o Debug/../../bin/bson.so -Wl,-gc-sections    -Wl,--start-group Debug/lua-bson.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/bson.so  -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\bson\bson.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.95

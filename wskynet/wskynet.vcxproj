@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EFD51D76-1D77-4DB9-9BC4-E575CBE8A13E}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.173\0001\4.8.5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.173\0001\4.8.5\x86_64-redhat-linux;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.173\0001\4.8.5\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.173\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.173\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.173\0000\include;$(ProjectDir)\..\lua;$(ProjectDir)\..\jemalloc\jemalloc\include\jemalloc\;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)wskynet-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.173\0001\4.8.5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.173\0001\4.8.5\x86_64-redhat-linux;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.173\0001\4.8.5\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.173\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.173\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.173\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)wskynet-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="debug.mak" />
+    <None Include="Makefile" />
+    <None Include="release.mak" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="atomic.h" />
+    <ClInclude Include="databuffer.h" />
+    <ClInclude Include="gcc_Debug.h" />
+    <ClInclude Include="gcc_Release.h" />
+    <ClInclude Include="hashid.h" />
+    <ClInclude Include="luashrtbl.h" />
+    <ClInclude Include="malloc_hook.h" />
+    <ClInclude Include="rwlock.h" />
+    <ClInclude Include="skynet.h" />
+    <ClInclude Include="skynet_daemon.h" />
+    <ClInclude Include="skynet_env.h" />
+    <ClInclude Include="skynet_handle.h" />
+    <ClInclude Include="skynet_harbor.h" />
+    <ClInclude Include="skynet_imp.h" />
+    <ClInclude Include="skynet_log.h" />
+    <ClInclude Include="skynet_malloc.h" />
+    <ClInclude Include="skynet_module.h" />
+    <ClInclude Include="skynet_monitor.h" />
+    <ClInclude Include="skynet_mq.h" />
+    <ClInclude Include="skynet_server.h" />
+    <ClInclude Include="skynet_socket.h" />
+    <ClInclude Include="skynet_timer.h" />
+    <ClInclude Include="socket_epoll.h" />
+    <ClInclude Include="socket_kqueue.h" />
+    <ClInclude Include="socket_poll.h" />
+    <ClInclude Include="socket_server.h" />
+    <ClInclude Include="spinlock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="malloc_hook.c" />
+    <ClCompile Include="skynet_daemon.c" />
+    <ClCompile Include="skynet_env.c" />
+    <ClCompile Include="skynet_error.c" />
+    <ClCompile Include="skynet_handle.c" />
+    <ClCompile Include="skynet_harbor.c" />
+    <ClCompile Include="skynet_log.c" />
+    <ClCompile Include="skynet_main.c" />
+    <ClCompile Include="skynet_module.c" />
+    <ClCompile Include="skynet_monitor.c" />
+    <ClCompile Include="skynet_mq.c" />
+    <ClCompile Include="skynet_server.c" />
+    <ClCompile Include="skynet_socket.c" />
+    <ClCompile Include="skynet_start.c" />
+    <ClCompile Include="skynet_timer.c" />
+    <ClCompile Include="socket_server.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

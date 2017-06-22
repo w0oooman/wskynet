@@ -1,0 +1,14 @@
+﻿Build started 2017/6/22 20:55:15.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\wskynet.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\wskynet.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
+         VisualGDB: No file changes detected. If you believe it's a mistake, please clean the project and build it again.
+         VisualGDB: Executing prebuild actions
+         VisualGDB: Skipping disabled action: Run "cp " in directory "$(BuildDir)/../jemalloc/jemalloc/lib/" on local computer
+         VisualGDB: Run "make CONFIG=Debug" in directory "/home/tianle/src/wskynet/wskynet" on tianle@192.168.0.173 (SSH)
+         make: Nothing to be done for `all'.
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\wskynet.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.75

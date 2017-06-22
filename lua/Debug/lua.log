@@ -1,0 +1,48 @@
+﻿Build started 2017/6/22 15:34:16.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\lua\lua.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\lua\lua.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
+         VisualGDB: Sending 65 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Debug" in directory "/home/tianle/src/wskynet/lua" on tianle@192.168.0.173 (SSH)
+         mkdir Debug
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lapi.c -o Debug/lapi.o -MD -MF Debug/lapi.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lauxlib.c -o Debug/lauxlib.o -MD -MF Debug/lauxlib.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lbaselib.c -o Debug/lbaselib.o -MD -MF Debug/lbaselib.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lbitlib.c -o Debug/lbitlib.o -MD -MF Debug/lbitlib.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lcode.c -o Debug/lcode.o -MD -MF Debug/lcode.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lcorolib.c -o Debug/lcorolib.o -MD -MF Debug/lcorolib.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lctype.c -o Debug/lctype.o -MD -MF Debug/lctype.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c ldblib.c -o Debug/ldblib.o -MD -MF Debug/ldblib.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c ldebug.c -o Debug/ldebug.o -MD -MF Debug/ldebug.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c ldo.c -o Debug/ldo.o -MD -MF Debug/ldo.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c ldump.c -o Debug/ldump.o -MD -MF Debug/ldump.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lfunc.c -o Debug/lfunc.o -MD -MF Debug/lfunc.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lgc.c -o Debug/lgc.o -MD -MF Debug/lgc.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c linit.c -o Debug/linit.o -MD -MF Debug/linit.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c liolib.c -o Debug/liolib.o -MD -MF Debug/liolib.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c llex.c -o Debug/llex.o -MD -MF Debug/llex.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lmathlib.c -o Debug/lmathlib.o -MD -MF Debug/lmathlib.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lmem.c -o Debug/lmem.o -MD -MF Debug/lmem.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c loadlib.c -o Debug/loadlib.o -MD -MF Debug/loadlib.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lobject.c -o Debug/lobject.o -MD -MF Debug/lobject.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lopcodes.c -o Debug/lopcodes.o -MD -MF Debug/lopcodes.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c loslib.c -o Debug/loslib.o -MD -MF Debug/loslib.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lparser.c -o Debug/lparser.o -MD -MF Debug/lparser.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lstate.c -o Debug/lstate.o -MD -MF Debug/lstate.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lstring.c -o Debug/lstring.o -MD -MF Debug/lstring.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lstrlib.c -o Debug/lstrlib.o -MD -MF Debug/lstrlib.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c ltable.c -o Debug/ltable.o -MD -MF Debug/ltable.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c ltablib.c -o Debug/ltablib.o -MD -MF Debug/ltablib.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c ltm.c -o Debug/ltm.o -MD -MF Debug/ltm.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lua.c -o Debug/lua.o -MD -MF Debug/lua.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c luac.c -o Debug/luac.o -MD -MF Debug/luac.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lundump.c -o Debug/lundump.o -MD -MF Debug/lundump.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lutf8lib.c -o Debug/lutf8lib.o -MD -MF Debug/lutf8lib.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lvm.c -o Debug/lvm.o -MD -MF Debug/lvm.dep
+         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -c lzio.c -o Debug/lzio.o -MD -MF Debug/lzio.dep
+         ar -r Debug/../../lib/lua.a Debug/lapi.o Debug/lauxlib.o Debug/lbaselib.o Debug/lbitlib.o Debug/lcode.o Debug/lcorolib.o Debug/lctype.o Debug/ldblib.o Debug/ldebug.o Debug/ldo.o Debug/ldump.o Debug/lfunc.o Debug/lgc.o Debug/linit.o Debug/liolib.o Debug/llex.o Debug/lmathlib.o Debug/lmem.o Debug/loadlib.o Debug/lobject.o Debug/lopcodes.o Debug/loslib.o Debug/lparser.o Debug/lstate.o Debug/lstring.o Debug/lstrlib.o Debug/ltable.o Debug/ltablib.o Debug/ltm.o Debug/lua.o Debug/luac.o Debug/lundump.o Debug/lutf8lib.o Debug/lvm.o Debug/lzio.o
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\lua\lua.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.51

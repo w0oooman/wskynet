@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{5cf128dd-bb63-455f-96b0-265f9d2f591c}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{25802162-dae0-462e-b712-047ce0fd209d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{2e0ecf0a-132c-470c-8c58-a55c499c4c5d}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{292ef6de-7fc3-4366-90d9-0d207e694df9}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="include\jemalloc\internal\jemalloc_internal_defs.h.in" />
+    <None Include="include\jemalloc\internal\jemalloc_preamble.h.in" />
+    <None Include="include\jemalloc\internal\private_namespace.sh" />
+    <None Include="include\jemalloc\internal\private_symbols.sh" />
+    <None Include="include\jemalloc\internal\public_namespace.sh" />
+    <None Include="include\jemalloc\internal\public_unnamespace.sh" />
+    <None Include="include\jemalloc\internal\size_classes.sh" />
+    <None Include="include\jemalloc\internal\smoothstep.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gcc_Debug.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="gcc_Release.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\arena_externs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\arena_inlines_a.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\arena_inlines_b.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\arena_structs_a.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\arena_structs_b.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\arena_types.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\assert.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\atomic.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\atomic_c11.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\atomic_gcc_atomic.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\atomic_gcc_sync.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\atomic_msvc.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\background_thread_externs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\background_thread_inlines.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\background_thread_structs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\base_externs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\base_inlines.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\base_structs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\base_types.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\bit_util.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\bitmap.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\ckh.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\ctl.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\extent_dss.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\extent_externs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\extent_inlines.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\extent_mmap.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\extent_structs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\extent_types.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\hash.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\hooks.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\jemalloc_internal_decls.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\jemalloc_internal_externs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\jemalloc_internal_includes.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\jemalloc_internal_inlines_a.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\jemalloc_internal_inlines_b.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\jemalloc_internal_inlines_c.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\jemalloc_internal_macros.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\jemalloc_internal_types.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\large_externs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\malloc_io.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\mutex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\mutex_pool.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\mutex_prof.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\nstime.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\pages.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\ph.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\prng.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\prof_externs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\prof_inlines_a.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\prof_inlines_b.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\prof_structs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\prof_types.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\ql.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\qr.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\rb.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\rtree.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\rtree_tsd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\smoothstep.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\spin.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\stats.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\stats_tsd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\sz.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\tcache_externs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\tcache_inlines.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\tcache_structs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\tcache_types.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\ticker.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\tsd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\tsd_generic.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\tsd_malloc_thread_cleanup.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\tsd_tls.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\tsd_types.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\tsd_win.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\util.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jemalloc\internal\witness.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\arena.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\background_thread.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bitmap.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ckh.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ctl.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\extent.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\extent_dss.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\extent_mmap.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hash.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hooks.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jemalloc.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jemalloc_cpp.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\large.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\malloc_io.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mutex_pool.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nstime.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pages.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prng.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\prof.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtree.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\spin.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stats.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sz.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcache.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ticker.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tsd.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\witness.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\zone.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
