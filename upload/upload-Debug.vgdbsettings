@@ -31,6 +31,7 @@
         <string>*.mk</string>
         <string>*.in</string>
         <string>*.lua</string>
+        <string>config</string>
       </FileMasks>
       <TransferNewFilesOnly>true</TransferNewFilesOnly>
       <IncludeSubdirectories>true</IncludeSubdirectories>

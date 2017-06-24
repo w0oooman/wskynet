@@ -1,9 +1,9 @@
-﻿Build started 2017/6/22 17:55:10.
+﻿Build started 2017/6/24 14:25:24.
      1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" on node 2 (Build target(s)).
      1>Build:
          "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
-         VisualGDB: Found 742 source files to transfer. Checking the source cache to find modified files...
-         VisualGDB: Sending 742 updated source files to build machine...
+         VisualGDB: Found 744 source files to transfer. Checking the source cache to find modified files...
+         VisualGDB: Sending 744 updated source files to build machine...
          VisualGDB: Run "make CONFIG=Debug" in directory "/home/tianle/src/wskynet/" on tianle@192.168.0.173 (SSH)
          g++ -o Debug/upload -Wl,-gc-sections    -Wl,--start-group    -Wl,--rpath='$ORIGIN'   -Wl,--end-group
          /usr/bin/ld: cannot open output file Debug/upload: No such file or directory
@@ -21,4 +21,4 @@
 
 Build FAILED.
 
-Time Elapsed 00:00:01.07
+Time Elapsed 00:00:01.60
