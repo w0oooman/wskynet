@@ -1,9 +1,10 @@
-﻿Build started 2017/6/24 14:25:24.
-     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" on node 2 (Build target(s)).
-     1>Build:
-         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
-         VisualGDB: Found 744 source files to transfer. Checking the source cache to find modified files...
-         VisualGDB: Sending 744 updated source files to build machine...
+﻿Build started 2017/6/26 17:14:12.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" on node 2 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Debug clean" in directory "/home/tianle/src/wskynet/" on tianle@192.168.0.173 (SSH)
+         rm -rf Debug
+         VisualGDB: Sending 1240 updated source files to build machine...
          VisualGDB: Run "make CONFIG=Debug" in directory "/home/tianle/src/wskynet/" on tianle@192.168.0.173 (SSH)
          g++ -o Debug/upload -Wl,-gc-sections    -Wl,--start-group    -Wl,--rpath='$ORIGIN'   -Wl,--end-group
          /usr/bin/ld: cannot open output file Debug/upload: No such file or directory
@@ -16,9 +17,9 @@
          Directory: /home/tianle/src/wskynet/
      1>VisualGDB : error : Command-line action failed
      1>EXEC : error : Build has failed. See the Output window for more details.
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MakeFile.Targets(38,5): error MSB3073: The command ""C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"" exited with code 1.
-     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" (Build target(s)) -- FAILED.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MakeFile.Targets(43,5): error MSB3073: The command ""C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"" exited with code 1.
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" (Rebuild target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:01.60
+Time Elapsed 00:00:01.43

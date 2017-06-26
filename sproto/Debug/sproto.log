@@ -1,15 +1,14 @@
-﻿Build started 2017/6/22 15:34:21.
+﻿Build started 2017/6/26 16:41:58.
      1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\sproto\sproto.vcxproj" on node 4 (Build target(s)).
      1>Build:
          "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\sproto\sproto.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
-         VisualGDB: Sending 9 updated source files to build machine...
+         VisualGDB: No file changes detected. If you believe it's a mistake, please clean the project and build it again.
          VisualGDB: Run "make CONFIG=Debug" in directory "/home/tianle/src/wskynet/sproto/" on tianle@192.168.0.173 (SSH)
-         mkdir Debug
          gcc -ggdb -ffunction-sections -O0  -I../lua -DDEBUG  -fPIC -c lsproto.c -o Debug/lsproto.o -MD -MF Debug/lsproto.dep
          gcc -ggdb -ffunction-sections -O0  -I../lua -DDEBUG  -fPIC -c sproto.c -o Debug/sproto.o -MD -MF Debug/sproto.dep
-         g++ -shared -o Debug/../../bin/sproto.so -Wl,-gc-sections    -Wl,--start-group Debug/lsproto.o Debug/sproto.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/sproto.so  -Wl,--end-group
+         g++ -shared -o Debug/../../bin/luaclib/sproto.so -Wl,-gc-sections    -Wl,--start-group Debug/lsproto.o Debug/sproto.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/luaclib/sproto.so  -Wl,--end-group
      1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\sproto\sproto.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.70
+Time Elapsed 00:00:01.34

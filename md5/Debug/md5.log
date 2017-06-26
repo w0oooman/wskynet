@@ -1,16 +1,15 @@
-﻿Build started 2017/6/22 15:34:20.
+﻿Build started 2017/6/26 16:41:58.
      1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\md5\md5.vcxproj" on node 3 (Build target(s)).
      1>Build:
          "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\md5\md5.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
-         VisualGDB: Sending 10 updated source files to build machine...
+         VisualGDB: No file changes detected. If you believe it's a mistake, please clean the project and build it again.
          VisualGDB: Run "make CONFIG=Debug" in directory "/home/tianle/src/wskynet/md5" on tianle@192.168.0.173 (SSH)
-         mkdir Debug
          gcc -ggdb -ffunction-sections -O0  -I../lua -DDEBUG  -fPIC -c compat-5.2.c -o Debug/compat-5.2.o -MD -MF Debug/compat-5.2.dep
          gcc -ggdb -ffunction-sections -O0  -I../lua -DDEBUG  -fPIC -c md5.c -o Debug/md5.o -MD -MF Debug/md5.dep
          gcc -ggdb -ffunction-sections -O0  -I../lua -DDEBUG  -fPIC -c md5lib.c -o Debug/md5lib.o -MD -MF Debug/md5lib.dep
-         g++ -shared -o Debug/../../bin/md5.so -Wl,-gc-sections    -Wl,--start-group Debug/compat-5.2.o Debug/md5.o Debug/md5lib.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/md5.so  -Wl,--end-group
+         g++ -shared -o Debug/../../bin/luaclib/md5.so -Wl,-gc-sections    -Wl,--start-group Debug/compat-5.2.o Debug/md5.o Debug/md5lib.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/luaclib/md5.so  -Wl,--end-group
      1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\md5\md5.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.81
+Time Elapsed 00:00:01.15

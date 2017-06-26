@@ -1,14 +1,13 @@
-﻿Build started 2017/6/22 15:34:17.
-     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\logger\logger.vcxproj" on node 4 (Build target(s)).
+﻿Build started 2017/6/26 16:41:55.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\logger\logger.vcxproj" on node 5 (Build target(s)).
      1>Build:
          "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\logger\logger.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
-         VisualGDB: Sending 6 updated source files to build machine...
+         VisualGDB: No file changes detected. If you believe it's a mistake, please clean the project and build it again.
          VisualGDB: Run "make CONFIG=Debug" in directory "/home/tianle/src/wskynet/logger" on tianle@192.168.0.173 (SSH)
-         mkdir Debug
-         gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -fPIC -c service_logger.c -o Debug/service_logger.o -MD -MF Debug/service_logger.dep
-         g++ -shared -o Debug/../../bin/logger.so -Wl,-gc-sections    -Wl,--start-group Debug/service_logger.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/logger.so  -Wl,--end-group
+         gcc -ggdb -ffunction-sections  -I../wskynet -DDEBUG  -fPIC -c service_logger.c -o Debug/service_logger.o -MD -MF Debug/service_logger.dep
+         g++ -shared -o Debug/../../bin/cservice/logger.so -Wl,-gc-sections    -Wl,--start-group Debug/service_logger.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/cservice/logger.so  -Wl,--end-group
      1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\logger\logger.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.79
+Time Elapsed 00:00:01.76

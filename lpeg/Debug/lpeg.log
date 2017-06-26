@@ -1,5 +1,5 @@
-﻿Build started 2017/6/22 15:34:22.
-     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\lpeg.vcxproj" on node 5 (Build target(s)).
+﻿Build started 2017/6/26 17:50:22.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\lpeg.vcxproj" on node 2 (Build target(s)).
      1>Build:
          "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\lpeg.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
          VisualGDB: Sending 16 updated source files to build machine...
@@ -10,9 +10,9 @@
          gcc -ggdb -ffunction-sections -O0  -I../lua -DDEBUG  -fPIC -c lpprint.c -o Debug/lpprint.o -MD -MF Debug/lpprint.dep
          gcc -ggdb -ffunction-sections -O0  -I../lua -DDEBUG  -fPIC -c lptree.c -o Debug/lptree.o -MD -MF Debug/lptree.dep
          gcc -ggdb -ffunction-sections -O0  -I../lua -DDEBUG  -fPIC -c lpvm.c -o Debug/lpvm.o -MD -MF Debug/lpvm.dep
-         g++ -shared -o Debug/../../bin/lpeg.so -Wl,-gc-sections    -Wl,--start-group Debug/lpcap.o Debug/lpcode.o Debug/lpprint.o Debug/lptree.o Debug/lpvm.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/lpeg.so  -Wl,--end-group
+         g++ -shared -o Debug/../../bin/luaclib/lpeg.so -Wl,-gc-sections    -Wl,--start-group Debug/lpcap.o Debug/lpcode.o Debug/lpprint.o Debug/lptree.o Debug/lpvm.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/luaclib/lpeg.so  -Wl,--end-group
      1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\lpeg.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.64
+Time Elapsed 00:00:01.42

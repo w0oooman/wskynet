@@ -1,14 +1,13 @@
-﻿Build started 2017/6/22 15:34:16.
+﻿Build started 2017/6/26 16:41:55.
      1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\snlua\snlua.vcxproj" on node 3 (Build target(s)).
      1>Build:
          "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\snlua\snlua.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
-         VisualGDB: Sending 6 updated source files to build machine...
+         VisualGDB: No file changes detected. If you believe it's a mistake, please clean the project and build it again.
          VisualGDB: Run "make CONFIG=Debug" in directory "/home/tianle/src/wskynet/snlua" on tianle@192.168.0.173 (SSH)
-         mkdir Debug
          gcc -ggdb -ffunction-sections -O0  -I../wskynet -I../lua -DDEBUG  -fPIC -c service_snlua.c -o Debug/service_snlua.o -MD -MF Debug/service_snlua.dep
-         g++ -shared -o Debug/../../bin/snlua.so -Wl,-gc-sections    -Wl,--start-group Debug/service_snlua.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/snlua.so  -Wl,--end-group
+         g++ -shared -o Debug/../../bin/cservice/snlua.so -Wl,-gc-sections    -Wl,--start-group Debug/service_snlua.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/cservice/snlua.so  -Wl,--end-group
      1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\snlua\snlua.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.83
+Time Elapsed 00:00:01.11

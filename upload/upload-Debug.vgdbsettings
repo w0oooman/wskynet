@@ -32,6 +32,30 @@
         <string>*.in</string>
         <string>*.lua</string>
         <string>config</string>
+        <string>*.path</string>
+        <string>*.c1</string>
+        <string>*.c2</string>
+        <string>*.login</string>
+        <string>*.mc</string>
+        <string>*.path</string>
+        <string>*.userlog</string>
+        <string>config.mysql</string>
+        <string>config_log</string>
+        <string>*.sh</string>
+        <string>*.ac</string>
+        <string>*.md</string>
+        <string>*.m4</string>
+        <string>install-sh</string>
+        <string>*.sub</string>
+        <string>*.guess</string>
+        <string>*.html</string>
+        <string>*.xsl</string>
+        <string>*.cfg</string>
+        <string>*.yml</string>
+        <string>*.py</string>
+        <string>COPYING</string>
+        <string>.gitattributes</string>
+        <string>.gitignore</string>
       </FileMasks>
       <TransferNewFilesOnly>true</TransferNewFilesOnly>
       <IncludeSubdirectories>true</IncludeSubdirectories>

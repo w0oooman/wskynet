@@ -1,14 +1,13 @@
-﻿Build started 2017/6/22 15:34:17.
-     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\gate\gate.vcxproj" on node 5 (Build target(s)).
+﻿Build started 2017/6/26 16:41:55.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\gate\gate.vcxproj" on node 4 (Build target(s)).
      1>Build:
          "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\gate\gate.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
-         VisualGDB: Sending 6 updated source files to build machine...
+         VisualGDB: No file changes detected. If you believe it's a mistake, please clean the project and build it again.
          VisualGDB: Run "make CONFIG=Debug" in directory "/home/tianle/src/wskynet/gate" on tianle@192.168.0.173 (SSH)
-         mkdir Debug
          gcc -ggdb -ffunction-sections -O0  -I../wskynet -DDEBUG  -fPIC -c service_gate.c -o Debug/service_gate.o -MD -MF Debug/service_gate.dep
-         g++ -shared -o Debug/../../bin/gate.so -Wl,-gc-sections    -Wl,--start-group Debug/service_gate.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/gate.so  -Wl,--end-group
+         g++ -shared -o Debug/../../bin/cservice/gate.so -Wl,-gc-sections    -Wl,--start-group Debug/service_gate.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/cservice/gate.so  -Wl,--end-group
      1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\gate\gate.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.03
+Time Elapsed 00:00:01.41
