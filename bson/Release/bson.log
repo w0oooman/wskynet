@@ -1,0 +1,16 @@
+﻿Build started 2017/6/27 20:33:32.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\bson\bson.vcxproj" on node 4 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\bson\bson.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Release clean" in directory "/home/tianle/src/wskynet/bson" on tianle@192.168.0.173 (SSH)
+         rm -rf Release
+         VisualGDB: Sending 6 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/bson" on tianle@192.168.0.173 (SSH)
+         mkdir Release
+         gcc -ggdb -ffunction-sections -O3  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-bson.c -o Release/lua-bson.o -MD -MF Release/lua-bson.dep
+         g++ -shared -o Release/../../bin/luaclib/bson.so -W    -Wl,--start-group Release/lua-bson.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/luaclib/bson.so  -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\bson\bson.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.09

@@ -1,0 +1,47 @@
+﻿Build started 2017/6/27 20:33:37.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\lpeg.vcxproj" on node 5 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\lpeg.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Release clean" in directory "/home/tianle/src/wskynet/lpeg" on tianle@192.168.0.173 (SSH)
+         rm -rf Release
+         VisualGDB: Sending 16 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/lpeg" on tianle@192.168.0.173 (SSH)
+         mkdir Release
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c lpcap.c -o Release/lpcap.o -MD -MF Release/lpcap.dep
+         In file included from lpcap.h:9:0,
+                          from lpcap.c:9:
+     1>F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\lptypes.h(13): warning : "NDEBUG" redefined [enabled by default]
+          #define NDEBUG
+          ^
+         F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\<command-line>(0,0): note:  this is the location of the previous definition
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c lpcode.c -o Release/lpcode.o -MD -MF Release/lpcode.dep
+         In file included from lpcode.c:12:0:
+     1>F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\lptypes.h(13): warning : "NDEBUG" redefined [enabled by default]
+          #define NDEBUG
+          ^
+         F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\<command-line>(0,0): note:  this is the location of the previous definition
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c lpprint.c -o Release/lpprint.o -MD -MF Release/lpprint.dep
+         In file included from lpprint.c:11:0:
+     1>F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\lptypes.h(13): warning : "NDEBUG" redefined [enabled by default]
+          #define NDEBUG
+          ^
+         F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\<command-line>(0,0): note:  this is the location of the previous definition
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c lptree.c -o Release/lptree.o -MD -MF Release/lptree.dep
+         In file included from lptree.c:14:0:
+     1>F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\lptypes.h(13): warning : "NDEBUG" redefined [enabled by default]
+          #define NDEBUG
+          ^
+         F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\<command-line>(0,0): note:  this is the location of the previous definition
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c lpvm.c -o Release/lpvm.o -MD -MF Release/lpvm.dep
+         In file included from lpcap.h:9:0,
+                          from lpvm.c:13:
+     1>F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\lptypes.h(13): warning : "NDEBUG" redefined [enabled by default]
+          #define NDEBUG
+          ^
+         F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\<command-line>(0,0): note:  this is the location of the previous definition
+         g++ -shared -o Release/../../bin/luaclib/lpeg.so -W    -Wl,--start-group Release/lpcap.o Release/lpcode.o Release/lpprint.o Release/lptree.o Release/lpvm.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/luaclib/lpeg.so  -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\lpeg\lpeg.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.19

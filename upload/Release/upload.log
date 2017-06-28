@@ -1,0 +1,25 @@
+﻿Build started 2017/6/27 16:13:08.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" on node 2 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Release clean" in directory "/home/tianle/src/wskynet/" on tianle@192.168.0.173 (SSH)
+         rm -rf Release
+         VisualGDB: Sending 1240 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/" on tianle@192.168.0.173 (SSH)
+         g++ -o Release/upload -Wl,-gc-sections    -Wl,--start-group    -Wl,--rpath='$ORIGIN'   -Wl,--end-group
+         /usr/bin/ld: cannot open output file Release/upload: No such file or directory
+     1>collect2 : error : ld returned 1 exit status
+         make: *** [Release/upload] Error 1
+         -------------------------------------------------------------
+         Command exited with code 2
+         Executable: make
+         Arguments: CONFIG=Release
+         Directory: /home/tianle/src/wskynet/
+     1>VisualGDB : error : Command-line action failed
+     1>EXEC : error : Build has failed. See the Output window for more details.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MakeFile.Targets(43,5): error MSB3073: The command ""C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"" exited with code 1.
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\upload\upload.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.55

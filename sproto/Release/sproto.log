@@ -1,0 +1,17 @@
+﻿Build started 2017/6/27 20:33:35.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\sproto\sproto.vcxproj" on node 4 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\sproto\sproto.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Release clean" in directory "/home/tianle/src/wskynet/sproto/" on tianle@192.168.0.173 (SSH)
+         rm -rf Release
+         VisualGDB: Sending 9 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/sproto/" on tianle@192.168.0.173 (SSH)
+         mkdir Release
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c lsproto.c -o Release/lsproto.o -MD -MF Release/lsproto.dep
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c sproto.c -o Release/sproto.o -MD -MF Release/sproto.dep
+         g++ -shared -o Release/../../bin/luaclib/sproto.so -W    -Wl,--start-group Release/lsproto.o Release/sproto.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/luaclib/sproto.so  -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\sproto\sproto.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.82

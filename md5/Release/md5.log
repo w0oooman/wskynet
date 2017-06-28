@@ -1,0 +1,18 @@
+﻿Build started 2017/6/27 20:33:34.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\md5\md5.vcxproj" on node 3 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\md5\md5.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Release clean" in directory "/home/tianle/src/wskynet/md5" on tianle@192.168.0.173 (SSH)
+         rm -rf Release
+         VisualGDB: Sending 10 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/md5" on tianle@192.168.0.173 (SSH)
+         mkdir Release
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c compat-5.2.c -o Release/compat-5.2.o -MD -MF Release/compat-5.2.dep
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c md5.c -o Release/md5.o -MD -MF Release/md5.dep
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c md5lib.c -o Release/md5lib.o -MD -MF Release/md5lib.dep
+         g++ -shared -o Release/../../bin/luaclib/md5.so -W    -Wl,--start-group Release/compat-5.2.o Release/md5.o Release/md5lib.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/luaclib/md5.so  -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\md5\md5.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.54

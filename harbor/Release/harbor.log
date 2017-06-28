@@ -1,0 +1,16 @@
+﻿Build started 2017/6/27 20:33:32.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\harbor\harbor.vcxproj" on node 3 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\harbor\harbor.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Release clean" in directory "/home/tianle/src/wskynet/harbor" on tianle@192.168.0.173 (SSH)
+         rm -rf Release
+         VisualGDB: Sending 6 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/harbor" on tianle@192.168.0.173 (SSH)
+         mkdir Release
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c service_harbor.c -o Release/service_harbor.o -MD -MF Release/service_harbor.dep
+         g++ -shared -o Release/../../bin/cservice/harbor.so -W    -Wl,--start-group Release/service_harbor.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/cservice/harbor.so  -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\harbor\harbor.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.97

@@ -1,0 +1,50 @@
+﻿Build started 2017/6/27 20:33:28.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\lua\lua.vcxproj" on node 2 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\lua\lua.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Release clean" in directory "/home/tianle/src/wskynet/lua" on tianle@192.168.0.173 (SSH)
+         rm -rf Release
+         VisualGDB: Sending 65 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/lua" on tianle@192.168.0.173 (SSH)
+         mkdir Release
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lapi.c -o Release/lapi.o -MD -MF Release/lapi.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lauxlib.c -o Release/lauxlib.o -MD -MF Release/lauxlib.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lbaselib.c -o Release/lbaselib.o -MD -MF Release/lbaselib.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lbitlib.c -o Release/lbitlib.o -MD -MF Release/lbitlib.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lcode.c -o Release/lcode.o -MD -MF Release/lcode.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lcorolib.c -o Release/lcorolib.o -MD -MF Release/lcorolib.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lctype.c -o Release/lctype.o -MD -MF Release/lctype.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c ldblib.c -o Release/ldblib.o -MD -MF Release/ldblib.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c ldebug.c -o Release/ldebug.o -MD -MF Release/ldebug.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c ldo.c -o Release/ldo.o -MD -MF Release/ldo.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c ldump.c -o Release/ldump.o -MD -MF Release/ldump.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lfunc.c -o Release/lfunc.o -MD -MF Release/lfunc.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lgc.c -o Release/lgc.o -MD -MF Release/lgc.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c linit.c -o Release/linit.o -MD -MF Release/linit.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c liolib.c -o Release/liolib.o -MD -MF Release/liolib.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c llex.c -o Release/llex.o -MD -MF Release/llex.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lmathlib.c -o Release/lmathlib.o -MD -MF Release/lmathlib.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lmem.c -o Release/lmem.o -MD -MF Release/lmem.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c loadlib.c -o Release/loadlib.o -MD -MF Release/loadlib.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lobject.c -o Release/lobject.o -MD -MF Release/lobject.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lopcodes.c -o Release/lopcodes.o -MD -MF Release/lopcodes.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c loslib.c -o Release/loslib.o -MD -MF Release/loslib.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lparser.c -o Release/lparser.o -MD -MF Release/lparser.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lstate.c -o Release/lstate.o -MD -MF Release/lstate.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lstring.c -o Release/lstring.o -MD -MF Release/lstring.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lstrlib.c -o Release/lstrlib.o -MD -MF Release/lstrlib.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c ltable.c -o Release/ltable.o -MD -MF Release/ltable.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c ltablib.c -o Release/ltablib.o -MD -MF Release/ltablib.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c ltm.c -o Release/ltm.o -MD -MF Release/ltm.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lua.c -o Release/lua.o -MD -MF Release/lua.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c luac.c -o Release/luac.o -MD -MF Release/luac.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lundump.c -o Release/lundump.o -MD -MF Release/lundump.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lutf8lib.c -o Release/lutf8lib.o -MD -MF Release/lutf8lib.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lvm.c -o Release/lvm.o -MD -MF Release/lvm.dep
+         gcc -ggdb -ffunction-sections -O3  -I../wskynet -DNDEBUG -DRELEASE  -c lzio.c -o Release/lzio.o -MD -MF Release/lzio.dep
+         ar -r Release/../../lib/lua.a Release/lapi.o Release/lauxlib.o Release/lbaselib.o Release/lbitlib.o Release/lcode.o Release/lcorolib.o Release/lctype.o Release/ldblib.o Release/ldebug.o Release/ldo.o Release/ldump.o Release/lfunc.o Release/lgc.o Release/linit.o Release/liolib.o Release/llex.o Release/lmathlib.o Release/lmem.o Release/loadlib.o Release/lobject.o Release/lopcodes.o Release/loslib.o Release/lparser.o Release/lstate.o Release/lstring.o Release/lstrlib.o Release/ltable.o Release/ltablib.o Release/ltm.o Release/lua.o Release/luac.o Release/lundump.o Release/lutf8lib.o Release/lvm.o Release/lzio.o
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\lua\lua.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:15.89

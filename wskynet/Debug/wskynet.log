@@ -1,11 +1,14 @@
-﻿Build started 2017/6/26 16:42:00.
-     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\wskynet.vcxproj" on node 4 (Build target(s)).
-     1>Build:
-         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\wskynet.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
-         VisualGDB: No file changes detected. If you believe it's a mistake, please clean the project and build it again.
+﻿Build started 2017/6/27 20:03:48.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\wskynet.vcxproj" on node 2 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\wskynet.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Debug" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Debug clean" in directory "/home/tianle/src/wskynet/wskynet" on tianle@192.168.0.173 (SSH)
+         rm -rf Debug
+         VisualGDB: Sending 46 updated source files to build machine...
          VisualGDB: Executing prebuild actions
          VisualGDB: Skipping disabled action: Run "cp " in directory "$(BuildDir)/../jemalloc/jemalloc/lib/" on local computer
          VisualGDB: Run "make CONFIG=Debug" in directory "/home/tianle/src/wskynet/wskynet" on tianle@192.168.0.173 (SSH)
+         mkdir Debug
          gcc -ggdb -ffunction-sections -O0  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DDEBUG  -c malloc_hook.c -o Debug/malloc_hook.o -MD -MF Debug/malloc_hook.dep
          gcc -ggdb -ffunction-sections -O0  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DDEBUG  -c skynet_daemon.c -o Debug/skynet_daemon.o -MD -MF Debug/skynet_daemon.dep
          gcc -ggdb -ffunction-sections -O0  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DDEBUG  -c skynet_env.c -o Debug/skynet_env.o -MD -MF Debug/skynet_env.dep
@@ -22,9 +25,9 @@
          gcc -ggdb -ffunction-sections -O0  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DDEBUG  -c skynet_start.c -o Debug/skynet_start.o -MD -MF Debug/skynet_start.dep
          gcc -ggdb -ffunction-sections -O0  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DDEBUG  -c skynet_timer.c -o Debug/skynet_timer.o -MD -MF Debug/skynet_timer.dep
          gcc -ggdb -ffunction-sections -O0  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DDEBUG  -c socket_server.c -o Debug/socket_server.o -MD -MF Debug/socket_server.dep
-         g++ -o Debug/../../bin/wskynet -Wl,-gc-sections    -Wl,--start-group Debug/malloc_hook.o Debug/skynet_daemon.o Debug/skynet_env.o Debug/skynet_error.o Debug/skynet_handle.o Debug/skynet_harbor.o Debug/skynet_log.o Debug/skynet_main.o Debug/skynet_module.o Debug/skynet_monitor.o Debug/skynet_mq.o Debug/skynet_server.o Debug/skynet_socket.o Debug/skynet_start.o Debug/skynet_timer.o Debug/socket_server.o -lpthread -lm -ldl -lrt  -Wl,--rpath='$ORIGIN'  ../lib/lua.a ../lib/libjemalloc_pic.a -Wl,--end-group
-     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\wskynet.vcxproj" (Build target(s)).
+         g++ -o Debug/../../bin/wskynet -W    -Wl,--start-group Debug/malloc_hook.o Debug/skynet_daemon.o Debug/skynet_env.o Debug/skynet_error.o Debug/skynet_handle.o Debug/skynet_harbor.o Debug/skynet_log.o Debug/skynet_main.o Debug/skynet_module.o Debug/skynet_monitor.o Debug/skynet_mq.o Debug/skynet_server.o Debug/skynet_socket.o Debug/skynet_start.o Debug/skynet_timer.o Debug/socket_server.o -lpthread -lm -ldl -lrt  -Wl,--rpath='$ORIGIN'  ../lib/lua.a ../lib/libjemalloc_pic.a -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\wskynet.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.20
+Time Elapsed 00:00:02.19

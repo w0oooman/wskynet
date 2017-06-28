@@ -113,6 +113,9 @@
 #ifndef __DEC32_EPSILON__
 #define __DEC32_EPSILON__ 1E-6DF
 #endif
+#ifndef __OPTIMIZE__
+#define __OPTIMIZE__ 1
+#endif
 #ifndef __unix
 #define __unix 1
 #endif
@@ -145,6 +148,9 @@
 #endif
 #ifndef __SIZEOF_POINTER__
 #define __SIZEOF_POINTER__ 8
+#endif
+#ifndef NDEBUG
+#define NDEBUG 1
 #endif
 #ifndef __GCC_ATOMIC_CHAR16_T_LOCK_FREE
 #define __GCC_ATOMIC_CHAR16_T_LOCK_FREE 2
@@ -187,6 +193,9 @@
 #endif
 #ifndef __gnu_linux__
 #define __gnu_linux__ 1
+#endif
+#ifndef RELEASE
+#define RELEASE 1
 #endif
 #ifndef __LDBL_HAS_QUIET_NAN__
 #define __LDBL_HAS_QUIET_NAN__ 1
@@ -317,9 +326,6 @@
 #endif
 #ifndef __UINT8_TYPE__
 #define __UINT8_TYPE__ unsigned char
-#endif
-#ifndef __NO_INLINE__
-#define __NO_INLINE__ 1
 #endif
 #ifndef __FLT_MANT_DIG__
 #define __FLT_MANT_DIG__ 24
@@ -504,6 +510,9 @@
 #ifndef __SIZEOF_FLOAT__
 #define __SIZEOF_FLOAT__ 4
 #endif
+#ifndef __pic__
+#define __pic__ 2
+#endif
 #ifndef __UINTPTR_MAX__
 #define __UINTPTR_MAX__ 18446744073709551615UL
 #endif
@@ -612,6 +621,9 @@
 #ifndef __INT8_MAX__
 #define __INT8_MAX__ 127
 #endif
+#ifndef __PIC__
+#define __PIC__ 2
+#endif
 #ifndef __UINT_FAST32_TYPE__
 #define __UINT_FAST32_TYPE__ long unsigned int
 #endif
@@ -714,12 +726,6 @@
 #ifndef __ATOMIC_RELEASE
 #define __ATOMIC_RELEASE 3
 #endif
-#ifndef NDEBUG
-#define NDEBUG 
-#endif
-#ifndef RELEASE
-#define RELEASE 
-#endif
 #endif
 
 // --- Include directories begin --- //
@@ -729,6 +735,8 @@
 ///usr/lib/gcc/x86_64-redhat-linux/4.8.5/include
 ///usr/local/include
 ///usr/include
+//../lua
+//../wskynet
 // --- Include directories end --- //
 
 

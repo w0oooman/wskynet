@@ -13,17 +13,17 @@ OBJCOPY := objcopy
 
 #Additional flags
 PREPROCESSOR_MACROS := NDEBUG RELEASE
-INCLUDE_DIRS := 
+INCLUDE_DIRS := ../lua ../jemalloc/jemalloc/include/jemalloc/
 LIBRARY_DIRS := 
-LIBRARY_NAMES := 
-ADDITIONAL_LINKER_INPUTS := 
+LIBRARY_NAMES := pthread m dl rt
+ADDITIONAL_LINKER_INPUTS := ../lib/lua.a ../lib/libjemalloc_pic.a
 MACOS_FRAMEWORKS := 
 LINUX_PACKAGES := 
 
-CFLAGS := -ggdb -ffunction-sections -O3
-CXXFLAGS := -ggdb -ffunction-sections -O3
+CFLAGS := -ggdb -ffunction-sections -Wall -O2
+CXXFLAGS := -ggdb -ffunction-sections -Wall -O2
 ASFLAGS := 
-LDFLAGS := -Wl,-gc-sections
+LDFLAGS := -Wl,-E
 COMMONFLAGS := 
 
 START_GROUP := -Wl,--start-group

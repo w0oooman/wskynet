@@ -1,0 +1,16 @@
+﻿Build started 2017/6/27 21:05:36.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\gate\gate.vcxproj" on node 3 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\gate\gate.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Release clean" in directory "/home/tianle/src/wskynet/gate" on tianle@192.168.0.173 (SSH)
+         rm -rf Release
+         VisualGDB: Sending 6 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/gate" on tianle@192.168.0.173 (SSH)
+         mkdir Release
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c service_gate.c -o Release/service_gate.o -MD -MF Release/service_gate.dep
+         g++ -shared -o Release/../../bin/cservice/gate.so -Wl,-gc-sections    -Wl,--start-group Release/service_gate.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/cservice/gate.so  -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\gate\gate.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.50

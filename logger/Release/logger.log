@@ -1,0 +1,13 @@
+﻿Build started 2017/6/28 9:27:24.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\logger\logger.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\logger\logger.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Sending 6 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/logger" on tianle@192.168.0.173 (SSH)
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c service_logger.c -o Release/service_logger.o -MD -MF Release/service_logger.dep
+         g++ -shared -o Release/../../bin/cservice/logger.so     -Wl,--start-group Release/service_logger.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/cservice/logger.so  -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\logger\logger.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.28

@@ -1,0 +1,35 @@
+﻿Build started 2017/6/27 21:05:36.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\wskynet.vcxproj" on node 4 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\wskynet.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Release clean" in directory "/home/tianle/src/wskynet/wskynet" on tianle@192.168.0.173 (SSH)
+         rm -rf Release
+         VisualGDB: Sending 46 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/wskynet" on tianle@192.168.0.173 (SSH)
+         mkdir Release
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c malloc_hook.c -o Release/malloc_hook.o -MD -MF Release/malloc_hook.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_daemon.c -o Release/skynet_daemon.o -MD -MF Release/skynet_daemon.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_env.c -o Release/skynet_env.o -MD -MF Release/skynet_env.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_error.c -o Release/skynet_error.o -MD -MF Release/skynet_error.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_handle.c -o Release/skynet_handle.o -MD -MF Release/skynet_handle.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_harbor.c -o Release/skynet_harbor.o -MD -MF Release/skynet_harbor.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_log.c -o Release/skynet_log.o -MD -MF Release/skynet_log.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_main.c -o Release/skynet_main.o -MD -MF Release/skynet_main.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_module.c -o Release/skynet_module.o -MD -MF Release/skynet_module.dep
+         skynet_module.c: In function ‘skynet_module_insert’:
+     1>F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\skynet_module.c(136,25): warning : unused variable ‘m’ [-Wunused-variable]
+           struct skynet_module * m = _query(mod->name);
+                                  ^
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_monitor.c -o Release/skynet_monitor.o -MD -MF Release/skynet_monitor.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_mq.c -o Release/skynet_mq.o -MD -MF Release/skynet_mq.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_server.c -o Release/skynet_server.o -MD -MF Release/skynet_server.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_socket.c -o Release/skynet_socket.o -MD -MF Release/skynet_socket.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_start.c -o Release/skynet_start.o -MD -MF Release/skynet_start.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c skynet_timer.c -o Release/skynet_timer.o -MD -MF Release/skynet_timer.dep
+         gcc -ggdb -ffunction-sections -Wall -O2  -I../lua -I../jemalloc/jemalloc/include/jemalloc/ -DNDEBUG -DRELEASE  -c socket_server.c -o Release/socket_server.o -MD -MF Release/socket_server.dep
+         g++ -o Release/../../bin/wskynet -Wl,-E    -Wl,--start-group Release/malloc_hook.o Release/skynet_daemon.o Release/skynet_env.o Release/skynet_error.o Release/skynet_handle.o Release/skynet_harbor.o Release/skynet_log.o Release/skynet_main.o Release/skynet_module.o Release/skynet_monitor.o Release/skynet_mq.o Release/skynet_server.o Release/skynet_socket.o Release/skynet_start.o Release/skynet_timer.o Release/socket_server.o -lpthread -lm -ldl -lrt  -Wl,--rpath='$ORIGIN'  ../lib/lua.a ../lib/libjemalloc_pic.a -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\wskynet\wskynet.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.68

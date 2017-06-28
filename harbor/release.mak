@@ -13,7 +13,7 @@ OBJCOPY := objcopy
 
 #Additional flags
 PREPROCESSOR_MACROS := NDEBUG RELEASE
-INCLUDE_DIRS := 
+INCLUDE_DIRS := ../wskynet
 LIBRARY_DIRS := 
 LIBRARY_NAMES := 
 ADDITIONAL_LINKER_INPUTS := 
@@ -23,7 +23,7 @@ LINUX_PACKAGES :=
 CFLAGS := -ggdb -ffunction-sections -O3
 CXXFLAGS := -ggdb -ffunction-sections -O3
 ASFLAGS := 
-LDFLAGS := -Wl,-gc-sections
+LDFLAGS := -W
 COMMONFLAGS := 
 
 START_GROUP := -Wl,--start-group

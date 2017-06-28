@@ -1,0 +1,38 @@
+﻿Build started 2017/6/28 9:27:43.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\skynet\skynet.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /build "F:\MyTest\myTest\testCPP\centos\wskynet\skynet\skynet.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Sending 24 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/skynet/" on tianle@192.168.0.173 (SSH)
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lsha1.c -o Release/lsha1.o -MD -MF Release/lsha1.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-bson.c -o Release/lua-bson.o -MD -MF Release/lua-bson.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-clientsocket.c -o Release/lua-clientsocket.o -MD -MF Release/lua-clientsocket.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-cluster.c -o Release/lua-cluster.o -MD -MF Release/lua-cluster.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-crypt.c -o Release/lua-crypt.o -MD -MF Release/lua-crypt.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-datasheet.c -o Release/lua-datasheet.o -MD -MF Release/lua-datasheet.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-debugchannel.c -o Release/lua-debugchannel.o -MD -MF Release/lua-debugchannel.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-memory.c -o Release/lua-memory.o -MD -MF Release/lua-memory.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-mongo.c -o Release/lua-mongo.o -MD -MF Release/lua-mongo.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-multicast.c -o Release/lua-multicast.o -MD -MF Release/lua-multicast.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-mysqlaux.c -o Release/lua-mysqlaux.o -MD -MF Release/lua-mysqlaux.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-netpack.c -o Release/lua-netpack.o -MD -MF Release/lua-netpack.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-profile.c -o Release/lua-profile.o -MD -MF Release/lua-profile.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-seri.c -o Release/lua-seri.o -MD -MF Release/lua-seri.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-sharedata.c -o Release/lua-sharedata.o -MD -MF Release/lua-sharedata.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-skynet.c -o Release/lua-skynet.o -MD -MF Release/lua-skynet.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-socket.c -o Release/lua-socket.o -MD -MF Release/lua-socket.dep
+         gcc -ggdb -ffunction-sections -Wall -O2 -fPIC --shared  -I../lua -I../wskynet -DNDEBUG -DRELEASE  -fPIC -c lua-stm.c -o Release/lua-stm.o -MD -MF Release/lua-stm.dep
+         lua-stm.c: In function ‘stm_grab’:
+     1>F:\MyTest\myTest\testCPP\centos\wskynet\skynet\\lua-stm.c(88,6): warning : unused variable ‘ref’ [-Wunused-variable]
+           int ref = ATOM_FINC(&obj->reference);
+               ^
+         lua-stm.c: In function ‘stm_copy’:
+     1>F:\MyTest\myTest\testCPP\centos\wskynet\skynet\\lua-stm.c(98,7): warning : unused variable ‘ref’ [-Wunused-variable]
+            int ref = ATOM_FINC(&ret->reference);
+                ^
+         g++ -shared -o Release/../../bin/luaclib/skynet.so     -Wl,--start-group Release/lsha1.o Release/lua-bson.o Release/lua-clientsocket.o Release/lua-cluster.o Release/lua-crypt.o Release/lua-datasheet.o Release/lua-debugchannel.o Release/lua-memory.o Release/lua-mongo.o Release/lua-multicast.o Release/lua-mysqlaux.o Release/lua-netpack.o Release/lua-profile.o Release/lua-seri.o Release/lua-sharedata.o Release/lua-skynet.o Release/lua-socket.o Release/lua-stm.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/luaclib/skynet.so  -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\skynet\skynet.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.90

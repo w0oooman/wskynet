@@ -1,0 +1,18 @@
+﻿Build started 2017/6/27 20:33:33.
+     1>Project "F:\MyTest\myTest\testCPP\centos\wskynet\client\client.vcxproj" on node 5 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "F:\MyTest\myTest\testCPP\centos\wskynet\client\client.vcxproj" "/solution:F:\MyTest\myTest\testCPP\centos\wskynet\wskynet.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Release clean" in directory "/home/tianle/src/wskynet/client" on tianle@192.168.0.173 (SSH)
+         rm -rf Release
+         VisualGDB: Sending 8 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Release" in directory "/home/tianle/src/wskynet/client" on tianle@192.168.0.173 (SSH)
+         mkdir Release
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c lsha1.c -o Release/lsha1.o -MD -MF Release/lsha1.dep
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c lua-clientsocket.c -o Release/lua-clientsocket.o -MD -MF Release/lua-clientsocket.dep
+         gcc -ggdb -ffunction-sections -O3  -I../lua -DNDEBUG -DRELEASE  -fPIC -c lua-crypt.c -o Release/lua-crypt.o -MD -MF Release/lua-crypt.dep
+         g++ -shared -o Release/../../bin/luaclib/client.so -W    -Wl,--start-group Release/lsha1.o Release/lua-clientsocket.o Release/lua-crypt.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,../../bin/luaclib/client.so  -Wl,--end-group
+     1>Done Building Project "F:\MyTest\myTest\testCPP\centos\wskynet\client\client.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.91
